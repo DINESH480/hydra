@@ -1,7 +1,3 @@
-num=float(input("Enter a number: "))
-if num>0:
-    print("Positive number")
-elif num<0:
-    print("Negative number")
-else:
-    print("Zero")
+n=5
+for i in range (1,n+1):
+      print("*" * i)
