@@ -1,3 +1,4 @@
-text = "Python is powerful"
-substrings = text.split()  # Default split by space
-print(substrings)
+a = 5
+b = 3
+sum = a + b
+print(sum)
