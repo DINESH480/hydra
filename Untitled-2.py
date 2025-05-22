@@ -1,4 +1,5 @@
-a = 5
-b = 3
-sum = a + b
-print(sum)
+n = int(input("Enter a number: "))
+if n % 2 == 0:
+    print("Even")
+else:
+    print("Odd")
