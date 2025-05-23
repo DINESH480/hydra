@@ -1,5 +1,9 @@
-n = int(input("Enter a number: "))
-if n % 2 == 0:
-    print("Even")
+a = 10
+b = 25
+c = 15
+if a >= b and a >= c:
+    print(a)
+elif b >= a and b >= c:
+    print(b)
 else:
-    print("Odd")
+    print(c)
