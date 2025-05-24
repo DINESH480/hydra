@@ -1,9 +1,9 @@
-a = 10
-b = 25
-c = 15
-if a >= b and a >= c:
-    print(a)
-elif b >= a and b >= c:
-    print(b)
-else:
-    print(c)
+num = 11
+is_prime = True
+if num <= 1:
+    is_prime = False
+for i in range(2, int(num ** 0.5) + 1):
+    if num % i == 0:
+        is_prime = False
+        break
+print(is_prime)
