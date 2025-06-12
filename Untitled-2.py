@@ -1,5 +1,3 @@
-year = 2024
-if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
-    print("Leap Year")
-else:
-    print("Not Leap Year")
+numbers = [5, 10, 15, 20]
+total = sum(numbers)
+print(total)
