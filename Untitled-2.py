@@ -1,3 +1,2 @@
-numbers = [5, 10, 15, 20]
-total = sum(numbers)
-print(total)
+for i in range(1, 11):
+    print(i)
