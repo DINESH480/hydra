@@ -1,2 +1,2 @@
-for i in range(1, 11):
-    print(i)
+l = [5, 2, 8, 1, 9]
+print(min(l))
