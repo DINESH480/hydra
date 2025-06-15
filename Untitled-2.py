@@ -1,2 +1,5 @@
-l = [5, 2, 8, 1, 9]
-print(min(l))
+n = int(input("Enter N: "))
+total = 0
+for i in range(1, n + 1):
+    total += i
+print("Sum:", total)
