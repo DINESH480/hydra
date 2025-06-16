@@ -1,5 +1,3 @@
-n = int(input("Enter N: "))
-total = 0
-for i in range(1, n + 1):
-    total += i
-print("Sum:", total)
+n = int(input("Enter number: "))
+for i in range(1, 11):
+    print(n, "x", i, "=", n * i)
