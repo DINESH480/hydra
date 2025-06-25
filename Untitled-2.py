@@ -1,3 +1,8 @@
-p, r, t = 1000, 5, 2
-si = (p * r * t) / 100
-print(si)
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+
+a = a + b
+b = a - b
+a = a - b
+
+print("After swapping: a =", a, "b =", b)
