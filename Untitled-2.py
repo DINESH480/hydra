@@ -1,10 +1,8 @@
-text = input("Enter a string: ")
-seen = set()
+import random
+import string
 
-for char in text:
-    if char in seen:
-        print("First repeating character:", char)
-        break
-    seen.add(char)
-else:
-    print("No repeating characters found")
+def generate_password(length):
+    chars = string.ascii_letters + string.digits + string.punctuation
+    return ''.join(random.choice(chars) for _ in range(length))
+
+print(generate_password(12))
