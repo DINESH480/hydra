@@ -1,9 +1,7 @@
-a=2
-b=4
-c=3
-a=a+b
-b=b+c
-c=c+a
-print(a)
-print(b)
-print(c)
+rows = 5
+num = 1
+for i in range(1, rows + 1):
+    for j in range(i):
+        print(num, end=" ")
+        num += 1
+    print()
