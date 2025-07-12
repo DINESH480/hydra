@@ -1,8 +1,7 @@
-def convert_seconds(seconds):
-    hours = seconds // 3600
-    minutes = (seconds % 3600) // 60
-    sec = seconds % 60
-    return f"{hours:02}:{minutes:02}:{sec:02}"
+def generate_username(name, birth_year):
+    parts = name.lower().split()
+    return parts[0][:3] + parts[-1][-2:] + str(birth_year)[-2:]
 
-total_seconds = int(input("Enter total seconds of video: "))
-print("Converted Time:", convert_seconds(total_seconds))
+name = input("Enter your full name: ")
+year = int(input("Enter your birth year: "))
+print("Your username:", generate_username(name, year))
