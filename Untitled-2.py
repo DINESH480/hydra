@@ -1,15 +1,13 @@
-def generate_username(name, birth_year):
-    parts = name.lower().split()
-    return parts[0][:3] + parts[-1][-2:] + str(birth_year)[-2:]
-
-name = input("Enter your full name: ")
-year = int(input("Enter your birth year: "))
-print("Your username:", generate_username(name, year))
 import random
-
-while True:
-    roll = input("Roll the dice? (y/n): ")
-    if roll.lower() == 'y':
-        print("You rolled:", random.randint(1, 6))
-    else:
-        break
+choices = ['rock', 'paper', 'scissors']
+user = input("Choose rock/paper/scissors: ").lower()
+bot = random.choice(choices)
+print(f"You: {user} | Bot: {bot}")
+if user == bot:
+    print("Draw")
+elif (user == 'rock' and bot == 'scissors') or \
+     (user == 'paper' and bot == 'rock') or \
+     (user == 'scissors' and bot == 'paper'):
+    print("You win!")
+else:
+    print("You lose!")
