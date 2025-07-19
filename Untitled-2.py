@@ -11,3 +11,4 @@ elif (user == 'rock' and bot == 'scissors') or \
     print("You win!")
 else:
     print("You lose!")
+print("Thanks for playing!")
